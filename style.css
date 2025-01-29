@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #ECF2F7;
+    font-family: "Popins",sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+.testimonials-cards{
+    display: grid;
+    gap: 1rem;
+}
+
+.testimonials-card-1{
+    background-color: #733FC7;
+    color: white;
+    padding: 1.2rem;
+}
+.testimonials-card-1__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.testimonials-card-profile-section{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.testimonials-user-info p{
+    font-size: 0.83rem;
+    color: #d3c8c8;
+}
+p{
+    color: #b4aeae;;
+}
+h4{
+    font-weight: bold;
+    font-size: 1.16rem;
+}
+.testimonials-user-info span{
+    font-weight: bold;
+}
+.testimonials-user-profile{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.testimonials-user-profile img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+.testimonials-card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.card-1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+.card-2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color:#49556B;
+}
+.card-3{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #f7f7f7;
+    color:black;
+}
+.card-4{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: #19202E;
+}
+.card-5{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: #f7f7f7;
+    color: black;
+}
+@media screen  and (max-width:740px){
+    .container{
+        height: 100vh;
+        overflow: scroll;
+    }
+    .testimonials-cards{
+        grid-template-columns: 327px;
+        grid-template-rows: auto;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+    
+      .card-2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+    
+      .card-5 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+    
+      .card-4 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+      }
+    
+      .card-3 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+      }
+}
